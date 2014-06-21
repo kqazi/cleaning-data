@@ -1,4 +1,4 @@
-o execute the "run_analysis" R function you must have the data from this URL:
+To execute the "run_analysis" R function you must have the data from this URL:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The only library that needs loading is "reshape2" prior to executing the script.
