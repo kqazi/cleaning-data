@@ -20,4 +20,4 @@ The funciton "run_analysis()" produces a "tidy" data set that has the following 
 * Produces a file called: "combined-activity-subject-variable-means.txt", relative to the working dir.
 * This file is made up of a total of 36 rows and 68 columns. The "Subject" and "Activity" columns denote the differnt types of data that exist in this data set.  These are the first 2 columns in the data set.  The remaining 66 columns represent the actual measurements that were taken during the study.  Each of those 66 columns is the actual "mean" of that given measurement for the "Subject" (person who participated in study) or "Activty" (what the person was doing during that measurement: "LAYING", "SITTING", etc)
 * Each of the 66 columns that are not "Subject" or "Activity" are data that was collected from the orignal study from the link at the beginning of the study. 
-* The presence of "NA" in the "Activity" or "Subject" (but not both for a given row)  column denotes the type of record: Acticity or Subject
+* The presence of "NA" in the "Activity" or "Subject" (but not both for a given row)  column denotes the type of record: Activity or Subject
