@@ -13,12 +13,12 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 It utilizes the data provided by this study from this URL:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-You should read the "ReadMe" file contained in this data set to fully understand what it is comprised of.
+You should read the "ReadMe" file contained in this data set to fully understand what the actual code does.  In general the data provided by this study for the "test" and "train" data sets was of equal dimensionality for the respecitve data sets, so it was just a matter of combining the "test" and "train" data sets via "rbind()" to have a single data set that could be used to further manipulate the data as the assignment specified.
 
 The funciton "run_analysis()" produces a "tidy" data set that has the following charateristics:
 
 * Produces a file called: "combined-activity-subject-variable-means.txt", relative to the working dir.
-* This file is made up of a total of 36 rows and 68 columns. The "Subject" and "Activity" columns denote the differnt types of data that exist in this data set.  These are the first 2 columns in the data set.  The remaining 66 columns represent the actual measurements that were taken during the study.  Each of those 66 columns is the actual "mean" of that given measurement for the "Subject" (person who participated in study) or "Activty" (what the person was doing during that measurement: "LAYING", "SITTING", etc)
+* This file is made up of a total of 36 rows and 68 columns. The "Subject" and "Activity" columns denote the differnt types of data that exist in this data set.  These are the first 2 columns in the data set.  The remaining 66 columns represent the actual measurements that were taken during the study.  Each of those 66 columns is the actual "mean" of that given measurement for the "Subject" (person who participated in study) or "Activty" (what the person was doing during that measurement: "LAYING", "SITTING", etc).   
 * Each of the 66 columns that are not "Subject" or "Activity" are data that was collected from the orignal study from the link at the beginning of the study, I just calculated the "mean()" of that particular variable and grouped it by either "Subject" or "Activity".  Also please read the file "features_info.txt" to understand what each of the variable's are.  This file is included in the zip file from the study.
-* The presence of "NA" in the "Activity" or "Subject" (but not both for a given row)  column denotes the type of record: Activity or Subject.  A record can only be one or the other.
+* The presence of "NA" in the "Activity" or "Subject" (but not both for a given row)  column denotes the type of record: "Activity" or "Subject".  A record can only be one or the other.
 
