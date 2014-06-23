@@ -1,4 +1,4 @@
-This code book explains what the "run_analysis()" function does.  This function depends on the "reshape2" library to perform the "dcast()" function, which allows for grouping of the data.
+This explains what the "run_analysis()" function does.  This function depends on the "reshape2" library to perform the "dcast()" function, which allows for grouping of the data.
 
 NOTE: The "Inertial Signals" directory is ignored for this assignment and no data is used from these dir's at all.
 
