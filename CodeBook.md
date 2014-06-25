@@ -23,3 +23,13 @@ The funciton "run_analysis()" produces a "tidy" data set that has the following 
 * Each of the 66 columns that are not "Subject" or "Activity" are data that was collected from the orignal study from the link at the beginning of the study, I just calculated the "mean()" of that particular variable and grouped it by either "Subject" or "Activity".  Also please read the file "features_info.txt" to understand what each of the variable's are.  This file is included in the zip file from the study.
 * The presence of "NA" in the "Activity" or "Subject" (but not both for a given row)  column denotes the type of record: "Activity" or "Subject".  A record can only be one or the other.
 
+
+NOTE:  After looking at others submissions for their data set I can see that I probably did too much by grouping the data by Activity or Subject.  The text in the instructions which read: "Creates a second, independent tidy data set with the average of each variable for each activity and each subject. " is what confused me, which is why I did the mean by either "Activity" or "Subject".  IMO these instructions were very unclear and I can easily see how I could have done it with much less work if the instructions were just a little more clear.  For example I could have just done this single call and skip all the melt(), dcast(), etc:
+
+``` r
+  # to get required data set.
+  activitiesAndSubjectByMean <- aggregate(combinedMeanAndStdData[,3:68], 
+                                                by = list(activity=combinedMeanAndStdData$Activity,
+                                                          subject = combinedMeanAndStdData$Subject),
+                                                mean)
+```
